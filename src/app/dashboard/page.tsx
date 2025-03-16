@@ -9,10 +9,11 @@ import { Search, MapPin, ExternalLink, TrendingUp } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from "recharts";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Pie, PieChart, Label } from "recharts";
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
+import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { ModeToggle } from "@/components/toggle_theme";
 
 interface GitHubData {
+  name: string;
   login: string;
   avatar_url: string;
   html_url: string;
